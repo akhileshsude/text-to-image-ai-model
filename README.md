@@ -1,16 +1,38 @@
-# React + Vite
+# VisionAI - Text to Image Generator 🎨✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautiful, modern text-to-image AI generation application built with React, Vite, and the official Hugging Face Javascript SDK.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+**[Launch Application: ai-image-model-phi.vercel.app](https://ai-image-model-phi.vercel.app/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌟 Overview
+This project uses the fast and high-quality `black-forest-labs/FLUX.1-schnell` model hosted on the Hugging Face Serverless Inference Router to generate stunning visuals dynamically from text prompts. It is wrapped in a premium, responsive glassmorphic UI.
 
-## React Compiler
+### Features
+- ⚡ **Lightning Fast Image Generation** using FLUX.1.
+- 🌈 **Premium Glassmorphism UI** with smooth CSS animations.
+- 📦 **Hugging Face JS SDK** for robust API routing without CORS issues.
+- ☁️ **Vercel Edge Network** automatic deployments.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Local Development
 
-## Expanding the ESLint configuration
+1. **Clone & Install**
+   ```bash
+   git clone https://github.com/akhileshsude/text-to-image-ai-model.git
+   cd AIimagemodel
+   npm install
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. **Add Environment Variables**
+   Create a `.env` file in the root directory and add your Hugging Face token:
+   ```env
+   VITE_HF_TOKEN=hf_your_token_here
+   ```
+
+3. **Run Dev Server**
+   ```bash
+   npm run dev
+   ```
+
+---
+*Built with React & Vite.*
